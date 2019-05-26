@@ -9,7 +9,7 @@
 }
 .centeredColumn {
 	height: 100%;
-	background-color: #acd5;
+	background-color: #acd1;
 	padding: 0;
 	width: 73%;
 	margin: 0 auto;
@@ -19,5 +19,16 @@
 	.centeredColumn {
 		min-width: 700px;
 		margin: 0 auto;
+	}
+}
+
+@media (max-width: 768px) {
+	.centeredColumn {
+		width: 100%;
+		min-width: 100%;
+		margin: 0;
+	}
+	#app {
+		height: auto;
 	}
 }

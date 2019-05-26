@@ -9,6 +9,11 @@
 	display: block;
 	width: 100%;
 	height: 30%;
+	background: url('/img/ag.jpg');
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-color: #0008;
 }
 #header .clearfix > div {
 	margin-top:  0.75rem;
@@ -19,7 +24,13 @@
 }
 
 #header .dropdown-menu{
-	min-width: 5rem;
+	min-width: 4.25rem;
+	margin-left: -0.75rem;
+	text-align: center;
+}
+
+#header .float-right a, #header .float-right button {
+	padding: .25rem .5rem; 
 }
 
 #groupedContent{
@@ -30,15 +41,24 @@
 }
 
 #groupedContent h1 {
-	font-size: 2.25rem;
+	font-size: 1.9rem;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: -1px;
 }
 
 #main-search + label.active {
-	background: #cecece;
+	background: #fff;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
 }
 #mainInput {
 	width: 50%;
 	margin: 0 auto;
+	background-color: #fff;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
 }
 #mainInput div.md-form {
 	margin-top: 0.75rem;
@@ -57,8 +77,27 @@
 	height: 25px;
 	width: 75px;
 	padding: 0;
+	border-color: #fff!important;
+	color: #fff!important;
 }
 
+@media (max-width: 1024px) {
+	#header img {
+		width: 80px;
+		margin: 6px;
+	}
+	#groupedContent {
+		width: 100%;
+		margin: 0;
+	}
+	#groupedContent h1 {
+		font-size: 1.75rem;
+	}
+}
+
+@media (max-width: 768px) {
+
+}
 #app {
 	height: 100vh;
 	width: 100vw;
@@ -70,7 +109,7 @@
 }
 .centeredColumn {
 	height: 100%;
-	background-color: #acd5;
+	background-color: #acd1;
 	padding: 0;
 	width: 73%;
 	margin: 0 auto;
@@ -83,6 +122,16 @@
 	}
 }
 
+@media (max-width: 768px) {
+	.centeredColumn {
+		width: 100%;
+		min-width: 100%;
+		margin: 0;
+	}
+	#app {
+		height: auto;
+	}
+}
 #mainContent {
 	display: block;
 	width: 100%;
